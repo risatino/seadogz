@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Catapult App</title>
+
+    <!-- Bootstrap -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+          
+    <!-- highcharts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://code.highcharts.com/modules/oldie.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+
+  <body>
+<!-- Navigation Start -->
+    <nav class="navbar navbar-default static-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <span class="navbar-brand glyphicon glyphicon-equalizer" href="#"></span>
+            <a class="navbar-brand" href="/">CATAPULT DATA ANALYSIS: Wearable Technology</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PLOTS<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/1">Wearable Technology: Player Load Data</a></li>
+                <li><a href="/2">Acute vs Chronic</a></li>
+                <li><a href="/3">Wins & Loses</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#" target="_blank">NCAA Northwestern Team</a></li>
+                <li><a href="#" target="_blank">Considerations</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+<!-- Navigation End -->
+<!-- HighChartsJS demo -->
+
+<div class="container">
+  <div class="row">
+  <h3>OVERVIEW: An Interactive Comparison Data Report</h3>
+    <h4>Is Urbanization On The Decline?</h4>
+    <p>Utilizing <a href="/fig1">LeafletJS</a> and <a href="/fig2">HighChartJS</a> charting libraries, our team aimed to investigate whether or not Urban areas are growing at a faster pace than their Suburban counterparts. In addition to this, we wanted to look deeper into a potential cause of these trends and used employment data from the Bureau of Labor Statistics to inform our analysis further.</p>
+    <p>Based on our analysis, we discovered the following: </p>
+    <ul>
+        <li>In most cases, suburban population and employment growth outperformed urban population growth. The latter, being a potential driver of Suburban sprawl.</li>
+        <li>In addition to this, high growth areas were consolidated primary among the coast and sunbelt. Perhaps an indication that weather and immigration play a role.</li>
+      </ul>
+      <p>Though it requires deeper research, it does appear that Suburban areas are growing at a faster pace than their Urban counterparts and that a potential driver of this is employment growth. </p>
+  </div>
+</div>
+
+<div class="container">
+<div class="row">
+  <div class="col-md-12">
+      <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~dhoebbel/29.embed"></iframe>
+  </div>
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+  <h3>Three Key Analysis Points</h3>
+  </div>
+<br>
+<!-- ACCORDION -->
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+<!-- PANEL -->
+  <div class="panel panel-default documents" style="display: block;">
+    <div class="panel-heading" role="tab">
+      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#panel0">1. Urbanization Trends (HighChartsJS: Scatter Plot)</a></h4>
+    </div>
+    <div id="panel0" class="panel-collapse collapse" role="tabpanel">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-12" style="padding-top:20px;">  
+            <a href="/fig1"><img src="../static/images/1accordion.png" alt="fig1-overview"/></a>
+            <h5>* Click image to see interactive HighChart</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL -->
+  <div class="panel panel-default documents" style="display: block;">
+    <div class="panel-heading" role="tab">
+      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#panel1">2. Employment Stats (PlotlyJS: Bar, Heat Map, Bubble Plot)</a></h4>
+    </div>
+    <div id="panel1" class="panel-collapse collapse" role="tabpanel">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="/fig2"><img src="../static/images/2accordion.png"></a>
+            <h5>* Click image to see interactive Plotly charts.</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL -->
+  <div class="panel panel-default documents" style="display: block;">
+    <div class="panel-heading" role="tab">
+      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#panel2">3. Population Growth (PlotlyJS: Bar, Heat Map, Bubble Plot)</a></h4>
+    </div>
+    <div id="panel2" class="panel-collapse collapse" role="tabpanel">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-12" style="padding-top:20px;">  
+            <a href="/fig3"><img src="../static/images/fig3-populate.png" alt="fig3-overview"/></a>
+            <h5>* Click image to see interactive Plotly charts.</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<br>
+
+</div>
+
+<!-- HighCharts JS -->
+    <script src="../static/js/highcharts.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../static/js/bootstrap.min.js"></script>
+  </body>
+</html>
