@@ -34,15 +34,6 @@ def elements():
 @app.route("/3")
 def login():
     return render_template("3pg.html")
-    
-# @app.route("/panels")
-# def panels():
-#     return render_template("panels.html")
-    
-# @app.route("/widgets")
-# def widgets():
-#     return render_template("widgets.html")
-
 
 if __name__ == "__main__":
     app.run(debug = True)
