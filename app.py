@@ -23,17 +23,17 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/1")
+@app.route("/outcomes")
 def charts():
-    return render_template("1pg.html")
+    return render_template("outcomes.html")
 
-@app.route("/2")
+@app.route("/1")
 def elements():
-    return render_template("2pg.html")
+    return render_template("1pg.html")
     
-@app.route("/3")
+@app.route("/2")
 def login():
-    return render_template("3pg.html")
+    return render_template("2pg.html")
 
 if __name__ == "__main__":
     app.run(debug = True)
