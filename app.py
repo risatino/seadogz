@@ -27,13 +27,5 @@ def index():
 def charts():
     return render_template("outcomes.html")
 
-@app.route("/1")
-def elements():
-    return render_template("1pg.html")
-    
-@app.route("/2")
-def login():
-    return render_template("2pg.html")
-
 if __name__ == "__main__":
     app.run(debug = True)
