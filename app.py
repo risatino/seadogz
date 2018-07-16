@@ -23,9 +23,9 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/outcomes")
-def charts():
-    return render_template("outcomes.html")
+# @app.route("/outcomes")
+# def charts():
+#     return render_template("outcomes.html")
 
 if __name__ == "__main__":
     app.run(debug = True)
