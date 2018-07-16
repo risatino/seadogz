@@ -53,10 +53,11 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#" target="_blank">Outcome Data</a></li>
-                <li><a href="#" target="_blank">Resource PDF 1</a></li>
-                <li><a href="#" target="_blank">Resource PDF 2</a></li>
+                <li><a href="#" target="_blank">Acute:Chronic Workload, Hulin, 2016 (PDF)</a></li>
+                <li><a href="#" target="_blank">Acute Workload & Injury, Hulin, 2013 (PDF)</a></li>
 
                 <li role="separator" class="divider"></li>
+                <li><a href="https://www.youtube.com/user/CatapultSports/videos" target="_blank">Catapult Sports Videos</a></li>
                 <li><a href="https://www.scienceforsport.com/acutechronic-workload-ratio/#av_section_2" target="_blank">Science For Sports</a></li>
                 <li><a href="https://github.com/risatino/seadogz" target="_blank">Github Code + Project Board</a></li>
               </ul>
@@ -73,16 +74,16 @@
   <div class="row">
     <div class="col-md-12">
       <h3>OVERVIEW: An Interactive Comparison Data Report</h3>
-      <p>The goal of this project was to compare basketball outcomes data (games stats & injury data) to captured athlete monitoring data and evaluate for trends. Data was compiled from the <a href="https://www.catapultsports.com/" target="_blank">Catapult Sport</a> API, team game statistics, and injury data from one NCAA Division I team. Data exploration was completed in Python Pandas with data visualization in Tableau and machine learning in Sci-Kit Learn. The graphs and data below show our exploration and analysis.</p>
+      <h4>The goal of this project was to compare basketball outcomes data (games stats & injury data) to captured athlete monitoring data and evaluate for trends. Data was compiled from the <a href="https://www.catapultsports.com/" target="_blank">Catapult Sport</a> API, team game statistics, and injury data from one NCAA Division I team. Data exploration was completed in Python Pandas with data visualization in Tableau and machine learning in Sci-Kit Learn. The graphs and data below show our exploration and analysis.</h4>
     <hr>
     <div class='tableauPlaceholder' style='width: 1145px; height: 690px;'><object class='tableauViz' width='1145' height='690' style='display:none;'><param name='host_url' value='https%3A%2F%2Fus-east-1.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;seadogs' /><param name='name' value='acute_chronic_ratio_injuries&#47;ratio_vs_ratio' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /><param name='filter' value='iframeSizedToWindow=true' /></object></div>
       <!-- <img src="../static/images/sd_datafetch.jpg" alt="figure1"/> -->
       <!-- <iframe width="1000" height="500" frameborder="0" scrolling="no" src=""></iframe> -->
       <br>
     
-    <p>Acute to chronic load ratios provide a snapshot of an athlete’s ‘fitness’ and ‘fatigue’.  There are different ways to calculate the ratio; we used the rolling average model. A handful of studies state that hovering around a ratio of 1.0 is a sweet spot for injury prevention, whereas, over 1.5 increases the likelihood of injury. The above graph compares two different versions of how this ratio. The gray line is the Science of Sport recommended measure of (7) days for the acute calculation and (28) days for chronic calculation. The green line shows the Catapult Sport calculated ration of (4) days to (28) days.</p>
+    <h4>Acute to chronic load ratios provide a snapshot of an athlete’s ‘fitness’ and ‘fatigue’.  There are different ways to calculate the ratio; we used the rolling average model. A handful of studies state that hovering around a ratio of 1.0 is a sweet spot for injury prevention, whereas, over 1.5 increases the likelihood of injury. The above graph compares two different versions of how this ratio. The gray line is the Science of Sport recommended measure of (7) days for the acute calculation and (28) days for chronic calculation. The green line shows the Catapult Sport calculated ration of (4) days to (28) days.</h4>
 
-    <p>The Science of Sport model has less variance throughout the season than Catapult Sport calculations.  For future analysis, a team or individual specific acute to chronic ratio threshold will help team staff plan optimal workouts and recovery measures. Current limitations is spotty wearable data.</p>
+    <h4>The Science of Sport model has less variance throughout the season than Catapult Sport calculations.  For future analysis, a team or individual specific acute to chronic ratio threshold will help team staff plan optimal workouts and recovery measures. Current limitations is spotty wearable data.</h4>
     
     </div>
   </div>
@@ -93,7 +94,7 @@
 <div class="container"> 
   <div class="row">
 
-  <h4>Key Analysis Points</h4>
+  <h3>Key Analysis Points</h3>
   </div>
 
   <br>
@@ -113,9 +114,8 @@
           <br>  
             <div class='tableauPlaceholder' style='width: 1050px; height: 600px;'><object class='tableauViz' width='1050' height='600' style='display:none;'><param name='host_url' value='https%3A%2F%2Fus-east-1.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;seadogs' /><param name='name' value='acute_chronic_ratio_injuries&#47;ratio_with_injury' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /><param name='filter' value='iframeSizedToWindow=true' /></object></div>
             <hr>
-            <h5>* Click interactive Tableau analysis.</h5>
             <br>
-            <p>This visualization takes the Catapult Sports determined acute to chronic ratio (team average) and tracks in the team injury data. While acute to chronic ratio is most applicable to overuse injuries, this graph takes into account with overuse and acute injuries.  Overuse injury tends to follow, within a month) a acute:chronic spike above 1.5.</p>
+            <h4>This visualization takes the Catapult Sports determined acute to chronic ratio (team average) and tracks in the team injury data. While acute to chronic ratio is most applicable to overuse injuries, this graph takes into account with overuse and acute injuries.  Overuse injury tends to follow, within a month) a acute:chronic spike above 1.5.</h4>
           </div>
 
         </div>
@@ -155,9 +155,8 @@
           <div class="col-sm-12" style="padding-top:20px;">  
             <iframe width="1000" height="700" frameborder="0" scrolling="no" src="//plot.ly/~dhoebbel/31.embed"></iframe>
             <hr>
-            <h5>* Click interactive Plotly.js analysis.</h5>
             <br>
-            <p>This analysis compares the average metrics from two datasets. The first dataset takes all players who were injured and their corresponding prior week of data. The second data set looks at all uninjured players and their corresponding prior week of data. Once compiled, we found that on average, player load and IMA for injured players was higher in the week leading up to the injury date than the non-injured player group.
+            <h4>This analysis compares the average metrics from two datasets. The first dataset takes all players who were injured and their corresponding prior week of data. The second data set looks at all uninjured players and their corresponding prior week of data. Once compiled, we found that on average, player load and IMA for injured players was higher in the week leading up to the injury date than the non-injured player group.</h4>
             </p>
           </div>
         </div>
@@ -175,9 +174,8 @@
       <div class="panel-body">
         <div class="row">
           <div class="col-sm-12" style="padding-top:20px;">  
-            <a href="#"><img src="../static/images/seadog_only.png" alt="seadawg"/></a>
-            <hr>
-            <h5>Placeholder Blurb: Jupyter Notebooks</h5>
+            <h4>Attempts to use Sci-Kit learn to run both logistics and linear regression proved unfruitful (see Jupyter Notebooks under Resources > Github Code. For the binary logistics regression, using occurence of injury as the outcome, resulted in a gross over-fitting of the model due to the rare occurence of injury in comparision to the volume of daily data.  A model, such as a Firth Regression, is need in this case to penalize the maximum liklihood ratio, however, is not available in Sci-Kit learn.  R does have package (logistf), but did not have time in the scope of the project. </h4>
+            <h4>Under the injury group comparison tab, there are interesting notes about the differences in Catapult data between injury and non-injured players.</h4>
           </div>
         </div>
       </div>
@@ -195,14 +193,13 @@
           <div class="col-sm-12" style="padding-top:20px;">  
             <a href="/outcomes"><img src="../static/images/seadog_only.png" alt="seadawg"/></a>
             <hr>
-            <h5>* Click interactive Tableau analysis.</h5>
             <br>
-            <p>INSERT: Load Points Scored, Outcome Load 2016-17, Outcome Load 2017-18 Tableau graphs</p>
-            <p>Using acute:chronic ratio, and, more broadly, aggregate team load data exhibits limitations in predicting the score of a game. For example, when the team load averaged between 5,000-6,000, the points scored ranged from 61 to 86 points. Similarly, on the high end, when the team load averaged over 8,000 for a game, the range in points scored was 60 to 96.</p>
+            <h4>INSERT: Load Points Scored, Outcome Load 2016-17, Outcome Load 2017-18 Tableau graphs</h4>
+            <h4>Using acute:chronic ratio, and, more broadly, aggregate team load data exhibits limitations in predicting the score of a game. For example, when the team load averaged between 5,000-6,000, the points scored ranged from 61 to 86 points. Similarly, on the high end, when the team load averaged over 8,000 for a game, the range in points scored was 60 to 96.</h4>
 
-            <p>Predicting game outcome presents comparable limitations. Losses over the 2016-17 and 2017-18 seasons exhibited an average aggregate team load ranging from 4,923 to 10,605, while wins over the same period ranged from 5,263 to 10,072.</p>
+            <h4>Predicting game outcome presents comparable limitations. Losses over the 2016-17 and 2017-18 seasons exhibited an average aggregate team load ranging from 4,923 to 10,605, while wins over the same period ranged from 5,263 to 10,072.</h4>
 
-            <p>There are a number of potential reasons driving the limitation of using aggregate average team load data to predict game score or outcome. One such theory stems from the fact that not all teams present the same level of matchup difficulty. Strength of schedule would logically play a significant role in determining the level of effort needed to score points or obtain victory. Further research is needed to better determine how matchup affects game load.</p>
+            <h4>There are a number of potential reasons driving the limitation of using aggregate average team load data to predict game score or outcome. One such theory stems from the fact that not all teams present the same level of matchup difficulty. Strength of schedule would logically play a significant role in determining the level of effort needed to score points or obtain victory. Further research is needed to better determine how matchup affects game load.</h4>
           </div>
         </div>
       </div>
