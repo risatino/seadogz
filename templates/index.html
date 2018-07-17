@@ -52,9 +52,9 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#" target="_blank">Outcome Data</a></li>
-                <li><a href="#" target="_blank">Acute:Chronic Workload, Hulin, 2016 (PDF)</a></li>
-                <li><a href="#" target="_blank">Acute Workload & Injury, Hulin, 2013 (PDF)</a></li>
+                <!-- <li><a href="#" target="_blank">Outcome Data</a></li> -->
+                <li><a href="https://drive.google.com/file/d/1oROgroM4cWew1j-pdiH5w9RAm2fkNgre/view?usp=sharing" target="_blank">Acute:Chronic Workload, Hulin, 2016 (PDF)</a></li>
+                <li><a href="https://drive.google.com/file/d/13Gq_WmkdgZ9Ce4SKWMkD6zm4e62s9QdC/view?usp=sharing" target="_blank">Acute Workload & Injury, Hulin, 2013 (PDF)</a></li>
 
                 <li role="separator" class="divider"></li>
                 <li><a href="https://www.youtube.com/user/CatapultSports/videos" target="_blank">Catapult Sports Videos</a></li>
@@ -135,8 +135,6 @@
           <div class="col-sm-12">
           <br>  
             <div class='tableauPlaceholder' style='width: 1050px; height: 600px;'><object class='tableauViz' width='1050' height='600' style='display:none;'><param name='host_url' value='https%3A%2F%2Fus-east-1.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;seadogs' /><param name='name' value='acute_chronic_ratio_injuries&#47;total_inj_vs_total_ratio' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /><param name='filter' value='iframeSizedToWindow=true' /></object></div>
-            <hr>
-            <!-- <a href="/1"><img src="../static/images/seadog_only.png" alt="figure1"/></a> -->
           </div>
           
         </div>
@@ -173,6 +171,7 @@
     <div id="panel3" class="panel-collapse collapse" role="tabpanel">
       <div class="panel-body">
         <div class="row">
+          <a href="#"><img src="../static/images/seadog_only.png" alt="figure1"/></a>
           <div class="col-sm-12" style="padding-top:20px;">  
             <h4>Attempts to use Sci-Kit learn to run both logistics and linear regression proved unfruitful (see Jupyter Notebooks under Resources > Github Code. For the binary logistics regression, using occurence of injury as the outcome, resulted in a gross over-fitting of the model due to the rare occurence of injury in comparision to the volume of daily data.  A model, such as a Firth Regression, is need in this case to penalize the maximum liklihood ratio, however, is not available in Sci-Kit learn.  R does have package (logistf), but did not have time in the scope of the project. </h4>
             <h4>Under the injury group comparison tab, there are interesting notes about the differences in Catapult data between injury and non-injured players.</h4>
@@ -191,14 +190,19 @@
       <div class="panel-body">
         <div class="row">
           <div class="col-sm-12" style="padding-top:20px;">  
-            <a href="/outcomes"><img src="../static/images/seadog_only.png" alt="seadawg"/></a>
-            <hr>
+  
+            <div class='tableauPlaceholder' style='width: 1050px; height: 600px;'><object class='tableauViz' width='1050' height='600' style='display:none;'><param name='host_url' value='https%3A%2F%2Fus-east-1.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;seadogs' /><param name='name' value='tableau_graphs&#47;LoadPointsScored' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /><param name='filter' value='iframeSizedToWindow=true' /></object></div>
             <br>
-            <h4>INSERT: Load Points Scored, Outcome Load 2016-17, Outcome Load 2017-18 Tableau graphs</h4>
             <h4>Using acute:chronic ratio, and, more broadly, aggregate team load data exhibits limitations in predicting the score of a game. For example, when the team load averaged between 5,000-6,000, the points scored ranged from 61 to 86 points. Similarly, on the high end, when the team load averaged over 8,000 for a game, the range in points scored was 60 to 96.</h4>
-
+            
+            <hr>
+            <div class='tableauPlaceholder' style='width: 1050px; height: 600px;'><object class='tableauViz' width='1050' height='600' style='display:none;'><param name='host_url' value='https%3A%2F%2Fus-east-1.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;seadogs' /><param name='name' value='tableau_graphs&#47;OutcomeLoad2016-17' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /><param name='filter' value='iframeSizedToWindow=true' /></object></div>
+            <br>
             <h4>Predicting game outcome presents comparable limitations. Losses over the 2016-17 and 2017-18 seasons exhibited an average aggregate team load ranging from 4,923 to 10,605, while wins over the same period ranged from 5,263 to 10,072.</h4>
-
+            
+            <hr>
+            <div class='tableauPlaceholder' style='width: 1050px; height: 600px;'><object class='tableauViz' width='1050' height='600' style='display:none;'><param name='host_url' value='https%3A%2F%2Fus-east-1.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;seadogs' /><param name='name' value='tableau_graphs&#47;OutcomeLoad2017-18' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /><param name='filter' value='iframeSizedToWindow=true' /></object></div>
+            <br>
             <h4>There are a number of potential reasons driving the limitation of using aggregate average team load data to predict game score or outcome. One such theory stems from the fact that not all teams present the same level of matchup difficulty. Strength of schedule would logically play a significant role in determining the level of effort needed to score points or obtain victory. Further research is needed to better determine how matchup affects game load.</h4>
           </div>
         </div>
